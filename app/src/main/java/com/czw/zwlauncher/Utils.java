@@ -40,19 +40,7 @@ public class Utils {
 
     public static List<String> loadHead() {
         List<String> list = new ArrayList<>();
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
-        list.add("哈哈哈");
+        list.add("应用");
         list.add("哈哈哈");
         return list;
     }
