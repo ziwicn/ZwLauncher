@@ -24,13 +24,6 @@ public class Utils {
             for (ResolveInfo resolveInfo : intentActivities) {
                 if (!context.getPackageName().equals(resolveInfo.activityInfo.packageName)) {
                     entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
-                    entries.add(new AppInfo(packageManager, resolveInfo));
                 }
             }
         }
