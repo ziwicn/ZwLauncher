@@ -48,8 +48,6 @@ public class MainFragment extends Fragment {
 
     GridView mVerticalGridView;
 
-    HorizontalGridView mHorizontalGridView;
-
     AppAdapter mAdapter;
 
     TimeBroadCastReceiver mTimeBroadCastReceiver;
@@ -81,7 +79,6 @@ public class MainFragment extends Fragment {
         mVerticalGridView.setOnChildSelectedListener((parent, v, position, id) -> {
             Log.i("MainFragment", "  " + position);
         });
-        mVerticalGridView.setHorizontalGridView(mHorizontalGridView);
 
         mSimpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm");
         String time = mSimpleDateFormat.format(new Date(System.currentTimeMillis()));

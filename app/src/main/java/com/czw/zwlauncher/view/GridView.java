@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import com.czw.zwlauncher.interfaces.GridViewScrollListener;
 
 public class GridView extends VerticalGridView implements GridViewScrollListener {
-    HorizontalGridView mHorizontalGridView;
     public GridView(Context context) {
         super(context);
     }
@@ -52,7 +51,6 @@ public class GridView extends VerticalGridView implements GridViewScrollListener
                     int position = getChildLayoutPosition(focusedView);
                     if (position < ((GridLayoutManager)getLayoutManager()).getSpanCount()) {
                         Log.i("GridView", " " + position);
-                        mHorizontalGridView.requestFocus();
                     }
                     return true;
                 }
@@ -64,9 +62,5 @@ public class GridView extends VerticalGridView implements GridViewScrollListener
     @Override
     public void scrollToPosition(int position) {
         smoothScrollToPosition(position);
-    }
-
-    public void setHorizontalGridView(HorizontalGridView horizontalGridView) {
-        mHorizontalGridView = horizontalGridView;
     }
 }
