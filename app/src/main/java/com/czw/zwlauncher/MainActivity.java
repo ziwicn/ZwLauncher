@@ -35,10 +35,10 @@ public class MainActivity extends FragmentActivity {
                 .replace(R.id.container, mMainFragment)
                 .commit();
         View decorView = getWindow().getDecorView();
-        //隐藏状态栏
+
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
-        //记住如果您隐藏状态栏绝不要显示活动栏，所以隐藏它也是必要的。
+
         ActionBar actionBar = getActionBar();
         if (actionBar != null)
             actionBar.hide();
@@ -47,6 +47,5 @@ public class MainActivity extends FragmentActivity {
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        mMainFragment.requestFocus();
     }
 }

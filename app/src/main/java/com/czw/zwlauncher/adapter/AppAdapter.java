@@ -49,9 +49,11 @@ public class AppAdapter extends RecyclerView.Adapter {
                 (view.findViewById(R.id.focus_view)).setVisibility(View.INVISIBLE);
             }
         });
-//        if(position == 0) {
-//            holder.itemView.requestFocus();
-//        }
+        holder.itemView.setFocusableInTouchMode(true);
+
+        if (position == 0) {
+            holder.itemView.requestFocus();
+        }
     }
 
     @Override
